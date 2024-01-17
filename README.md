@@ -21,5 +21,7 @@ Have you ever wanted to set new goals but don't know where to start? What if you
     - Login
     - Add goals
     - Update progress bar 
+    - Grab Inspirational Quote from Web Service 
 - DB/Login - Stores data/goals from each user based on login information 
-- Websocket - As you update your goals, you will see the progress bar move up 
+- Websocket - As you update your goals, you will see the progress bar move up, along with your friends goals 
+

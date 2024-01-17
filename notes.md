@@ -28,6 +28,13 @@ git commit -m " " -a
 git add notes.md (commits only this file)  
 
 # 1.2 History Jan 17, 2024
-
+The Web Father (Time Berners-Lee) HTTP, HTML, URL  
+TCP: Transmission Control Protocol
+Hakon Wium Lie - Creator of CSS 
+Brandan Eich - Javascript, Took him about a week to write JavaScript
+The 3 pillars are:  
+- HTML
+- CSS
+- Javascript
 
 
