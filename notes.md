@@ -27,4 +27,3 @@ Deliverables - Design is due on wednesday January 17
 # git commit -m " " -a
 # -a (it adds everything and gets everything ready to commit)
 # git add notes.md (commits only this file)
-# git commit -m (commits only the file you are currently selecting)
