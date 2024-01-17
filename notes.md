@@ -16,10 +16,15 @@ Learn how to make an app similar to simon
 
 Deliverables - Design is due on wednesday January 17
 
-# git commands
-# cd command
+# terminal commands
+# cd = change directory
 # dir = directory
 # ls = list
 # git status
 # git push
 # git pull 
+# git diff 
+# git commit -m " " -a
+# -a (it adds everything and gets everything ready to commit)
+# git add notes.md (commits only this file)
+# git commit -m (commits only the file you are currently selecting)
