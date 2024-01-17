@@ -16,7 +16,10 @@ Learn how to make an app similar to simon
 
 Deliverables - Design is due on wednesday January 17
 
-
-# cd command 
-# ls = list
+# git commands
+# cd command
 # dir = directory
+# ls = list
+# git status
+# git push
+# git pull 
