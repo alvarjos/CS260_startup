@@ -15,3 +15,8 @@ Apply to startup
 Learn how to make an app similar to simon 
 
 Deliverables - Design is due on wednesday January 17
+
+
+# cd command 
+# ls = list
+# dir = directory
