@@ -4,6 +4,10 @@
 Have you ever wanted to set new goals but don't know where to start? What if you wanted to have a easy way to write down all your goals and keep track of them consistently? The goal tracker allows you to store all of your goals in a secure place, make an action plan, review your progess easily, and achieve greater success in your day to day activities. As you create a goal, it generates a plan, date, and progress bar that allows you to check up on your goal and see how much you've accomplished.
 
 ### Design 
+![Photos of the app design.](https://drive.google.com/file/d/1gvep-BQocM-rjJ0ESpHKLjoiNC4eN6MV/view?usp=drive_link)
+![Photo 2](https://drive.google.com/file/d/1dsDIK_0O1BK8vJ95Jeyx1AweiLo0vQp5/view?usp=drive_link)
+![Photo 3](https://drive.google.com/file/d/171sMRo9nyd_GnHsAfrfazH_kfo1pdYLw/view?usp=drive_link)
+![Photo 4](https://drive.google.com/file/d/1NPQSOys9TFBuJ25f45UdpDfaFObORuLB/view?usp=drive_link)
 
 ### Key Features
 * Secure Login over HTTPS
