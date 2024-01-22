@@ -20,7 +20,7 @@ cd = change directory
 dir = directory  
 ls = list  
 git status  
-git push  
+git push 
 git pull      
 git diff   
 git commit -m " " -a  
@@ -37,4 +37,13 @@ The 3 pillars are:
 - CSS
 - Javascript
 
+# 2.1 Technology Stacks 
+The collection of technologies that you use to create or deliver your web application
+The key with a tech stack is the realization that there is no one answer to the question of what technology to use where, and the answer continually evolves.
+
+Node.js Web services: Allows us to direct where our server goes, whether its to simon or our startup 
+MongoDB: Database
+
+example from class to use in gitbash
+ssh -i ~/keys/cs260/cs260.pem unbuntu@3.238.89.253
 
