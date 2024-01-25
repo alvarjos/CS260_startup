@@ -70,6 +70,7 @@ example from class to use in gitbash
 ssh -i ~/keys/cs260/cs260.pem unbuntu@3.238.89.253
 
 ## Operating Systems 
+
 - The Web runs on Linux 
 1. Linux
 2. Mac
@@ -78,4 +79,7 @@ ssh -i ~/keys/cs260/cs260.pem unbuntu@3.238.89.253
 
 ## The Console 
 Helps you navigate your disk, and run console applications 
+
+VIM/VI -> I -> Insert(This is how you edit in Vi)
+
 
