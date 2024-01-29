@@ -82,4 +82,9 @@ Helps you navigate your disk, and run console applications
 
 VIM/VI -> I -> Insert(This is how you edit in Vi)
 
+This was added using VI notes.md
+
+# Idea for Progess bar
+Find an app similar to mine in Code Pen and find out how to make a progress bar, animation, etc... 
+
 
