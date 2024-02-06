@@ -87,4 +87,49 @@ This was added using VI notes.md
 # Idea for Progess bar
 Find an app similar to mine in Code Pen and find out how to make a progress bar, animation, etc... 
 
+- Create the 4 html files and add them to your index file as a reference. Don't need to add the java script and css, but just a structure for it. You will add the CSS/JS later. 
 
+you can reference fonts using 
+
+@import url("grab from google fonts")
+body {
+    font-family: Rubik Microbe, Arial;
+    font-size: 20vh;
+}
+or
+@font-face {
+    font-family: "Quicksand";
+    src: url("https://CS260/"Quicksand")
+}
+- Quicksand is the variable you would put in front of the font family for the body tag in CSS
+
+## UNICODE AND UTF-8
+- Unicode and UTF-8 is the basic universal code that they created to run all types of characters in the coding enviornment 
+
+Animation: look at the different CSS animation tags such as 
+    Animation-name: demo;
+    Animation-duration: 3s;
+@keyframes demo {
+    from {
+        color: purple;
+        font-size: 0vh;
+    }
+    95% {
+        font-size: 21vh;
+    }
+    to {
+        color: red;
+        
+        font-size: 20vh;
+    }
+}
+
+Use inline-end because not all languages read left to right
+
+PBM - Pals Before Marriage
+1. Padding
+2. Border
+3. Margin
+
+1fr = 1 fractional unit 
+use display: flex in the Body Tag of CSS
