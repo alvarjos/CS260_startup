@@ -30,5 +30,28 @@ body {
 }
 
 .homePage-header {
+    display: flex;
+    flex: 3;
     background-color: black;
+    color: white;
+    flex-direction: column;
+    min-height: 100px;
+    font-size: 70px;
+    text-align: center;
+}
+
+.nav-items {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 17px;
+    text-align: end;
+    flex-direction: column;
+    align-self: center;
+    gap: 50px; 
+    justify-content: flex-end;
+}
+.nav-items a {
+    text-decoration: none;
+    color: white;
 }
