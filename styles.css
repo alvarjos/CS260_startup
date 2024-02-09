@@ -55,3 +55,18 @@ body {
     text-decoration: none;
     color: white;
 }
+.homePage-main {
+    padding: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+.homePage-sectionbreak {
+    content: '';
+    display: block;
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin-top: 10px;
+
+}

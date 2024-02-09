@@ -133,3 +133,21 @@ PBM - Pals Before Marriage
 
 1fr = 1 fractional unit 
 use display: flex in the Body Tag of CSS
+
+## Background for JavaScript
+1995 - Eich invents JavaScript
+1997 - JacaScript becomes ECMAScript
+2009 - ES5: Strict, JSON, array iteration
+2015-xx - ES6: let, default params, async, rest/spread, destructure, module, class, template literals 
+
+Inspired by Scheme
+Interpreted 
+Dynamically Typed 
+# Playgrounds 
+- Browser debugging console
+- CodePen
+- VSCode (Live Server)
+- Node.js
+
+Use let instead of var when assigning a variable 
+for example : "let y = 1;" instead of "var y = 1;"
