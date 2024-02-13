@@ -24,9 +24,15 @@ body {
 .index-footer {
     background: black;
     color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     text-align: center;
+    align-items: center;
     padding: 10px;
     margin-top: auto;
+    min-height: 25px;
+    max-height: 75px;
 }
 
 .homePage-header {
@@ -50,9 +56,11 @@ body {
     align-self: center;
     gap: 50px; 
     justify-content: flex-end;
+    text-underline-position: below;
+    text-decoration: underline;
+    padding-inline-end: 15px;
 }
 .nav-items a {
-    text-decoration: none;
     color: white;
 }
 .homePage-main {
@@ -79,4 +87,34 @@ body {
     min-height: 100px;
     font-size: 70px;
     text-align: center;
+}
+.accordion {
+    width: 50%;
+    margin: auto;
+}
+.accordion-item {
+    border: 1px solid black;
+    margin-bottom: 1px;
+    text-align: center;
+}
+.accordion-header{
+    background-color: lightgrey;
+    padding: 10px;
+    cursor: pointer;
+    padding: 3%;
+}
+.accordion-content{
+    display: none;
+    padding: 10px;
+    background-color: lightsteelblue;
+}
+.accordion-item.active .accordion-content {
+    display: block;
+}
+.accordion-sectionbreak {
+    content: '';
+    display: block;
+    border-bottom: 2px solid black;
+    width: 100%;
+    margin: 10px 0;
 }
