@@ -131,6 +131,8 @@ PBM - Pals Before Marriage
 2. Border
 3. Margin
 
+Padding puts space around the content of the selected elements
+
 1fr = 1 fractional unit 
 use display: flex in the Body Tag of CSS
 
@@ -143,6 +145,14 @@ use display: flex in the Body Tag of CSS
 Inspired by Scheme
 Interpreted 
 Dynamically Typed 
+
+3 ways you can include javascript in your HTML
+- <script>1+1</script>
+- <div onclick='1+1'/>
+- <script src='main.js'/>  
+
+" = " is not proper notation for declaring an object, you need to use a " : " i.e (n:1) instead of (n=1)
+
 # Playgrounds 
 - Browser debugging console
 - CodePen
@@ -151,3 +161,17 @@ Dynamically Typed
 
 Use let instead of var when assigning a variable 
 for example : "let y = 1;" instead of "var y = 1;"
+
+
+# Midterm review 
+'chmod +x deploy.sh' is how you make a script exectuable in the console command line
+- Look at instruction page on command page
+-  <div> = division
+
+When pointing to another DNS Record you should use "CNAME"
+CNAME = Alias, you have this hostname, and want to alias to this other hostname
+A = a hostname, and you are mapping into an IP Address
+TXT = storing text so someone could reference text 
+SOA = Start of Authority is telling you link up your DNS records with someone elses
+- CNAME's are not redirects
+
