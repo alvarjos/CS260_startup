@@ -175,3 +175,157 @@ TXT = storing text so someone could reference text
 SOA = Start of Authority is telling you link up your DNS records with someone elses
 - CNAME's are not redirects
 
+
+# JAVA SCRIPT PRACTICE
+
+### Log
+The basic usage of the console object is to output a log message.
+console.log('hello');
+
+### Timers
+If you are trying to see how long a piece of code is running you can wrap it with time and timeEnd calls and it will output the duration between the time and timeEnd calls.
+    console.time('demo time');
+    // ... some code that takes a long time.
+    console.timeEnd('demo time');
+    // OUTPUT: demo time: 9762.74 ms
+
+### Count
+To see how many times a block of code is called you can use the count function.
+    console.count('a');
+    // OUTPUT: a: 1
+    console.count('a');
+    // OUTPUT: a: 2
+    console.count('b');
+    // OUTPUT: b: 1
+
+###  Declaring variables
+Variables are declared using either the let or const keyword. let allows you to change the value of the variable while const will cause an error if you attempt to change it.
+
+let x = 1;
+const y = 2;
+
+JavaScript defines several primitive types.
+Type | Meaning
+Null - The type of a variable that has not been assigned a value.
+Undefined - The type of a variable that has not been defined.
+Boolean - true or false.
+Number - A 64-bit signed number.
+BigInt - A number of arbitrary magnitude.
+String - A textual sequence of characters.
+Symbol - A unique value.
+
+In addition to the above primitives, JavaScript defines several object types. Some of the more commonly used objects include the following:
+
+Type - Use                                                    
+Example: 
+Object - A collection of properties represented by name-value pairs. Values can be of any type.	
+- {a:3, b:'fish'}
+Function - An object that has the ability to be called. 
+- function a() {}
+Date - Calendar dates and times.
+- new Date('1995-12-17')
+Array - An ordered sequence of any type.	
+- [3, 'fish']
+Map	- A collection of key-value pairs that support efficient lookups. 
+- new Map()
+JSON - A lightweight data-interchange format used to share information across programs.	
+- {"a":3, "b":"fish"}
+
+
+Because strict equality is considered more intuitive, it is almost always preferred and should be used in your code.
+
+The syntax of the ternary operator is(code provided below): 
+# condition ? expression_if_true : expression_if_false;
+    condition: This is the condition that is evaluated. If it is true, the expression after ? is executed; otherwise, the expression after : is executed.
+    expression_if_true: The expression to be evaluated if the condition is true.
+    expression_if_false: The expression to be evaluated if the condition is false.
+In your specific code:
+# a === 1 ? console.log(1) : console.log('not 1');
+    a === 1 is the condition.
+    console.log(1) is the expression to be executed if the condition is true.
+    console.log('not 1') is the expression to be executed if the condition is false.
+
+Other boolean operators
+- && = and
+- || = or
+- ! = not
+
+# Common Javascript loops
+do while
+    let i = 0;
+    do {
+        console.log(i);
+        i++;
+        } while (i < 2);
+    // OUTPUT: 0 1
+
+for in 
+The for in statement iterates over an object's property names.
+    const obj = { a: 1, b: 'fish' };
+    for (const name in obj) {
+        console.log(name);
+        }
+    // OUTPUT: a
+    // OUTPUT: b
+
+For arrays the object's name is the array index.
+    const arr = ['a', 'b'];
+    for (const name in arr) {
+        console.log(name);
+        }
+    // OUTPUT: 0
+    // OUTPUT: 1
+
+for of
+The for of statement iterates over an iterable's (Array, Map, Set, ...) property values.
+    const arr = ['a', 'b'];
+    for (const val of arr) {
+        console.log(val);
+        }
+    // OUTPUT: 'a'
+    // OUTPUT: 'b'
+
+Break and continue
+All of the looping constructs demonstrated above allow for either a break or continue statement to abort or advance the loop.
+    let i = 0;
+    while (true) {
+        console.log(i);
+        if (i === 0) {
+            i++;
+            continue;
+        } else {
+            break;
+        }
+    }
+    // OUTPUT: 0 1    
+
+# JavaScript String
+
+A string literal replacement specifier is declared with a dollar sign followed by a curly brace pair. Anything inside the curly braces is evaluated as JavaScript. You can also use backticks to create multiline strings without having to explicitly escape the newline characters using \n.
+
+'quoted text'; // " also works
+
+const l = 'literal';
+console.log(`string ${l + (1 + 1)} text`);
+// OUTPUT: string literal2 text
+
+
+String Functions
+    const s = 'Example:조선글';
+
+    console.log(s.length);
+    // OUTPUT: 11
+    console.log(s.indexOf('조선글'));
+    // OUTPUT: 8
+    console.log(s.split(':'));
+    // OUTPUT: ['Example', '조선글']
+    console.log(s.startsWith('Ex'));
+    // OUTPUT: true
+    console.log(s.endsWith('조선글'));
+    // OUTPUT: true
+    console.log(s.toLowerCase());
+    // OUTPUT: example:조선글
+
+
+
+
