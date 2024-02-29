@@ -5,9 +5,48 @@ body {
     flex-direction: column; 
     min-height: 100vh;
  }
-.index-header {
-    background-color: black;
+ body.indexPage {
+    background-image: url(designExamples/indexPage-BG.jpg);
+    background-size: cover;
+ }
+ body.homePage {
+    /* background-image: url(designExamples/homePage-BG.jpg); */
+    background-color: rgb(200, 201, 214);
+ }
+a {
+    color: black;
+    text-decoration: underline;
+}
+a:hover{
+    color: rgb(153, 123, 242);
+}
+.navbar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    text-align: end;
+    flex-direction: column;
+    align-self: center; 
+    justify-content: flex-end;
+    /* text-underline-position: below; */
+    text-decoration: underline;
+    padding-inline-end: 15px;
+}
+.navbar li {
+    margin-right: 20px;
+    padding: 10px;
+}
+.navbar li:last-child {
+    margin-right: 0;
+}
+.nav-items a {
     color: white;
+    padding: 10px;
+}
+.index-header {
+    /* background-color: black; */
+    color: black;
     text-align: center;
     padding: 10px;
 }
@@ -20,6 +59,8 @@ body {
 .index-main {
     flex: 1;
     text-align: center;
+    color: aliceblue;
+
 }
 .index-login {
     flex: 1;
@@ -27,7 +68,7 @@ body {
     padding: 10px;
 }
 .index-footer {
-    background: black;
+    /* background: black; */
     color: white;
     display: flex;
     flex-direction: column;
@@ -40,33 +81,17 @@ body {
     max-height: 75px;
 }
 
+/* Home Page CSS Styles  */
+
 .homePage-header {
     display: flex;
     flex: 3;
-    background-color: black;
+    /* background-color: black; */
     color: white;
     flex-direction: column;
     min-height: 100px;
     font-size: 70px;
     text-align: center;
-}
-
-.nav-items {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 17px;
-    text-align: end;
-    flex-direction: column;
-    align-self: center;
-    gap: 50px; 
-    justify-content: flex-end;
-    text-underline-position: below;
-    text-decoration: underline;
-    padding-inline-end: 15px;
-}
-.nav-items a {
-    color: white;
 }
 .homePage-main {
     padding: 10px;
@@ -74,6 +99,7 @@ body {
     font-family: sans-serif;
     font-weight: 400;
     font-size: 25px;
+    color: white;
 }
 .homePage-sectionbreak {
     content: '';
@@ -83,6 +109,9 @@ body {
     margin-top: 10px;
 
 }
+
+/* Friends Goal's Page CSS Styles */
+
 .friendsGoals-header {
     display: flex;
     flex: 3;
@@ -93,6 +122,7 @@ body {
     font-size: 70px;
     text-align: center;
 }
+
 .accordion {
     width: 50%;
     margin: auto;
@@ -122,4 +152,24 @@ body {
     border-bottom: 2px solid black;
     width: 100%;
     margin: 10px 0;
+}
+.progress-container {
+    width: 30%;
+    margin: 20px auto;
+    border: 1px solid black;
+    height: 30px;
+    position: relative;
+}
+.progress-bar {
+    width: 0px;
+    height: 100%;
+    background-color: #4CAF50;
+    border: black;
+}
+.progress-header {
+    font-family: Arial, Sans-Serif;
+    color: black;
+    text-align: center;
+    padding: 8px;
+    justify-content: center;
 }

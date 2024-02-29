@@ -309,7 +309,7 @@ const l = 'literal';
 console.log(`string ${l + (1 + 1)} text`);
 // OUTPUT: string literal2 text
 
-
+### Functions
 String Functions
     const s = 'Example:조선글';
 
@@ -325,6 +325,110 @@ String Functions
     // OUTPUT: true
     console.log(s.toLowerCase());
     // OUTPUT: example:조선글
+
+
+Example:     
+    function hello(who) {
+        return 'hello ' + who;
+    }
+
+    console.log(hello('world'));
+    // OUTPUT: hello world
+
+A function without a return value usually exists to produce some side effect like modifying a parameter or interacting with an 
+external program. In the following example the side effect of the function is to output text to the debugger console.
+    function hello(who) {
+        who.count++;
+        console.log('hello ' + who.name);
+    }
+
+    hello({ name: 'world', count: 0 });
+    // OUTPUT: hello world
+
+
+### Function parameters
+When a function is called, the caller may choose what parameters to provide. If a parameter is not provided then the value of the parameter is undefined when the function executes.
+In addition to explicitly passing the value of a parameter to a function, the function can define a default value. This is done by assigning a value to the parameter in the function declaration.
+    function labeler(value, title = 'title') {
+        console.log(`${title}=${value}`);
+    }
+    labeler();
+    // OUTPUT: title=undefined
+    labeler('fish');
+    // OUTPUT: title=fish
+    labeler('fish', 'animal');
+    // OUTPUT: animal=fish
+
+    
+Anonymous Functions
+    // Function that takes a function as a parameter
+    function doMath(operation, a, b) {
+        return operation(a, b);
+    }
+
+    // Anonymous function assigned to a variable
+    const add = function (a, b) {
+        return a + b;
+    };
+
+    console.log(doMath(add, 5, 3));
+    // OUTPUT: 8
+
+    // Anonymous function assigned to a parameter
+    console.log(
+    doMath(
+        function (a, b) {
+            return a - b;
+        },
+        5,
+        3
+    )
+    );
+    // OUTPUT: 2
+
+### Inner functions
+Functions can also be declared inside other functions. This allows you to modularize your code without always exposing private details.
+    function labeler(value) {
+    function stringLabeler(value) {
+        console.log('string=' + value);
+    }
+    function numberLabeler(value) {
+        console.log('number=' + value);
+    }
+
+    if (typeof value == 'string') {
+        stringLabeler(value);
+    } else if (typeof value == 'number') {
+        numberLabeler(value);
+    }
+    }
+    labeler(5);
+    // OUTPUT: number=5
+    labeler('fish');
+    // OUTPUT: string=fish
+
+
+# JavaScript arrow function
+To make the code more compact the arrow syntax was created. This syntax replaces the need for the function keyword with the symbols => placed after the parameter declaration. The enclosing curly braces are also optional.
+    const a = [1, 2, 3, 4];
+    // standard function syntax
+    a.sort(function (v1, v2) {
+    return v1 - v2;
+    });
+    // arrow function syntax
+    a.sort((v1, v2) => v1 - v2);
+
+### Return values
+Arrow functions also have special rules for the return keyword. The return keyword is optional if no curly braces are provided for the function and it contains a single expression. In that case the result of the expression is automatically returned. If curly braces are provided then the arrow function behaves just like a standard function.
+    () => 3;
+    // RETURNS: 3
+
+### This pointer
+Next, arrow functions inherit the this pointer from the scope of where it is created. This makes what is known as a closure. 
+- A closure allows a function to continue referencing its creation scope, even after it has passed out of that scope. This can be tricky to wrap your head around, and we discuss it in detail when we later talk about JavaScript scope. For now consider the following example.
+The function makeClosure returns an anonymous function using the arrow syntax. Notice that the a parameter is overridden, a new b variable is created, and both a and b are referenced in the arrow function. Because of that reference, they are both part of the closure for the returned function.
+
+
 
 
 

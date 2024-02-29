@@ -6,12 +6,13 @@
     <link href="styles.css" rel="stylesheet"/> 
     <title>Home Page</title>
 </head>
-<body>
+<body class="homePage">
     <header> 
         <div class="homePage-header">Goals<div>
-        <div class="nav-items">
+        <div class="navbar">
+            
             <a href="index.html">Login</a> 
-            <a href="addGoalPage.html">Add Goals</a>
+            <a href="addGoalPage.html">Add Goals  </a>
             <a href="friendsGoalsPage.html">View Friends Goals</a>
             </div>
 <!--
@@ -21,8 +22,13 @@
 -->
     </header>
     <main class="homePage-main">
-        Goal 1: Gain 15 lbs <br>
-        <div class="homePage-sections">Bar Here(Update/Edit)</div><br>
+        <div class="progress-header">Goal 1: Gain 15 lbs </div>
+            <div class="progress-container">
+                <div class="progress-bar" id="myProgressBar"></div>
+            </div>
+        <button onclick="updateProgressBar(10)">Increase Progress</button>
+        <button onclick="updateProgressBar(-10)">Decrease Progress</button>
+        <br><br>
         7/15 lbs
         <div class="homePage-sectionbreak"></div>
         Goal 2: Workout 5 times a week
