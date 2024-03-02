@@ -11,7 +11,7 @@ body {
  }
  body.homePage {
     /* background-image: url(designExamples/homePage-BG.jpg); */
-    background-color: rgb(200, 201, 214);
+    background-color: #a3b899;
  }
 a {
     color: black;
@@ -30,7 +30,7 @@ a:hover{
     align-self: center; 
     justify-content: flex-end;
     /* text-underline-position: below; */
-    text-decoration: underline;
+    /* text-decoration: underline; */
     padding-inline-end: 15px;
 }
 .navbar li {
@@ -41,7 +41,7 @@ a:hover{
     margin-right: 0;
 }
 .nav-items a {
-    color: white;
+    color: rgba(255, 255, 255, 0);
     padding: 10px;
 }
 .index-header {
@@ -80,6 +80,17 @@ a:hover{
     min-height: 25px;
     max-height: 75px;
 }
+.homePage-footer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: top;
+    align-items: center;
+    margin-top: 1px;
+    padding: 10px;
+    min-height: 25px;
+}
 
 /* Home Page CSS Styles  */
 
@@ -92,6 +103,7 @@ a:hover{
     min-height: 100px;
     font-size: 70px;
     text-align: center;
+    text-shadow: 0 0 10px rgba(116, 235, 173, 0.8);
 }
 .homePage-main {
     padding: 10px;
@@ -102,11 +114,13 @@ a:hover{
     color: white;
 }
 .homePage-sectionbreak {
-    content: '';
-    display: block;
-    border-bottom: 1px solid black;
-    width: 100%;
-    margin-top: 10px;
+    height: 20px;
+    margin-bottom: 20px;
+    /* width: 100%; 
+    /* margin-top: 10px; */
+    border-bottom: 2px solid black; 
+    /* content: ''; */
+    /* display: block; */
 
 }
 
@@ -168,7 +182,7 @@ a:hover{
 }
 .progress-header {
     font-family: Arial, Sans-Serif;
-    color: black;
+    color: white;
     text-align: center;
     padding: 8px;
     justify-content: center;

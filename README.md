@@ -42,6 +42,7 @@ For this deliverable I built out the structure of my application using HTML, and
 * Links - I set up all the pages to link to one another through a navigation bar at the top, or through the login page
 * Text - Each goal and their action plan are represented in text below the progress bar on homePage.html
 * Image - I added a nature image on the login page to give a motivational aspect 
+    - I also added a GitHub Icon at the bottom of Index.HTML that links to my GitHub Repository 
 * DB/Login - I added an input box for username and password in the login page. The user's goals and their associated
 friends are then pulled from their user information/database
 * Websocket - The friendsGoalPage will update information via the progress bar and counter in realtime as people update their goals and add new ones
