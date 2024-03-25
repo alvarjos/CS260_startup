@@ -6,33 +6,48 @@
     <link href="styles.css" rel="stylesheet">    
     <title>Add Goals</title>
 </head>
-<body>
+<body class="addGoalPage">
     <header>
-        <div class="homePage-header">Add Goals<div>
-        <div class="nav-items">
-            <a href="index.html">Login Page</a> 
-            <a href="homePage.html">Goals Page</a>
+        <div class="addGoal-header">Add Goals<div>
+        <div class="navbar">
+            <a href="index.html" style="text-decoration: underline;">Login Page</a> 
+            <a href="homePage.html" style="text-decoration: underline;">Goals Page</a>
             <!-- <a href="addGoalPage.html">Add Goals</a> -->
-            <a href="friendsGoalsPage.html">View Friends Goals</a>
+            <a href="friendsGoalsPage.html" style="text-decoration: underline;">Friend's Goals</a>
             </div>
     </header>
+
     <main class="homePage-main">
-        Type of Goal<br>
-        Input Box Here<br>
+        <div class="input">Type of Goal i.e Physical,<br>  
+            Social, Spiritual, etc...<br>
+            <form style="font-family: Arial, Helvetica, sans-serif;">
+                <label for="myInput"></label>
+                <input type="text" id="myInput" name="myInput" placeholder="Type of Goal...">
+            </form>
         <div class="homePage-sectionbreak"></div>
-        Description<br>
-        Input Box Here<br>
+        
+        <div class="input">Goal Description</div>
+            <label for="textarea"></label>
+            <textarea id="textarea" name="varTextarea"></textarea>
         <div class="homePage-sectionbreak"></div>
-        Plan<br>
-        Input Box Here<br>
+        
+        <div class="input">Plan</div>
+            <label for="textarea"></label>
+            <textarea id="textarea" name="varTextarea"></textarea>
         <div class="homePage-sectionbreak"></div>
-        Date<br>
-        Input Box Here
-        <div class="homePage-sectionbreak"></div><br><br>
-        Create Goal! 
+        
+        Target Date<br>
+        <label for="Date"></label>
+        <input type="date" name="varDate" id="date" />
+        
+        <div class="homePage-sectionbreak"></div>
+        <div class="creation-button">Create Goal!</div> 
     </main>
-    <footer class="index-footer">
-            Discipline is the bridge between goals and accomplishment.
+    <footer class="homePage-footer" style="padding-top: 2%;">
+        Discipline is the bridge between goals and accomplishment.
+        <a href="https://github.com/alvarjos/CS260_startup" target="_blank">
+            <img src="designExamples/GitHub-logo.png" style="margin-top: 10px;" alt="GitHub Logo" width="100px">
+        </a>
     </footer>
 </body>
 </html>

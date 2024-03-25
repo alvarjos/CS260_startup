@@ -7,15 +7,19 @@
     <title>Home Page</title>
 </head>
 <body class="homePage">
-    <header> 
+    <header class="container"> 
         <!-- when you login in your name will go below i.e Angel Alvarado-->
         <div class="homePage-header">Angel Alvarado<div>
-            <div style="font-size: 50px; text-decoration: underline; padding-top: 10px;">Your Goals</div>
-        <div class="navbar">
-            <a href="index.html">Login</a> 
-            <a href="addGoalPage.html">Add Goals</a>
-            <a href="friendsGoalsPage.html">View Friends Goals</a>
-            </div>
+        <div style="font-size: 50px; text-decoration: underline; padding-top: 10px;">Your Goals</div>
+        <div class="navbar" id="myNavBar">
+            <div class="nav-toggler icon" onclick="toggleMenu()">&#9776;</div>    
+            <div class="nav-items">    
+            <a href="index.html" style="text-decoration: underline;">Login</a> 
+                <a href="addGoalPage.html" style="text-decoration: underline;">Add Goals</a>
+                <a href="friendsGoalsPage.html" style="text-decoration: underline;">Friend's Goals</a>
+            </div>    
+        </div>
+        <script src="goals.js" defer></script>
 <!--
     Find a way to make it so when the page gets too small
     for the nav items to appear, that they fold into an 
@@ -58,5 +62,6 @@
             <img src="designExamples/GitHub-logo.png" style="margin-top: 10px;" alt="GitHub Logo" width="100px">
         </a>
     </footer>
+    
 </body>
 </html>

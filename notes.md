@@ -430,6 +430,60 @@ The function makeClosure returns an anonymous function using the arrow syntax. N
 
 
 
+# OWASP
+1. Broken Access Control
+- Least Privilege access violation 
 
+2. Cryptographic Failure
+- Transmitting data as clear text
+- Not encrypting at rest or transit
+- Weak cryptography
+- Misused cryptography
 
+3. Injection
+- User supplied data is not sanitized
+- User supplied data programmatically executed
+
+4. Insecure Design
+- Not aware of best practices
+- Unlimited trial accounts
+- Customer data not segmented
+- Single layer defense
+
+5. Security Misconfiguration
+- Development info exposed
+- Using default configurations
+- Unneccessary features installed
+- System not hardened 
+
+6. Vulnerable Components
+- Unnecessary/unused packages imported
+- Untrusted/verified sources
+- Out of date software
+- Not tracking vulnerability bulletins
+- Package versions not locked
+
+7. ID and Auth Failures
+- Credential stuffing
+- Brute force attacks
+- Permitting weak passwords
+- Weak credential recovery
+- Credentials in URL
+- Not expiring auth tokens
+
+8. Software Integrity Failures
+- Unverified CDN usage
+- Unverified packages
+- Unverified updates
+- Insecure CD/CI platforms
+
+9. Logging Failure
+- Not logging critical requests
+- Not monitoring system performances
+- Logs not audited, automatic or manual
+- Logs not stored centrally
+
+10. Server Side Request Forgery 
+
+# The Line of Death
 

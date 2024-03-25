@@ -48,4 +48,5 @@ friends are then pulled from their user information/database
 * Websocket - The friendsGoalPage will update information via the progress bar and counter in realtime as people update their goals and add new ones
 
 
-
+# CSS Deliverable
+For this deliverable I added the CSS to my application to make it look presentable. 
