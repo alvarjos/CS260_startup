@@ -7,14 +7,18 @@
     <title>Add Goals</title>
 </head>
 <body class="addGoalPage">
-    <header>
+    <header class="container">
         <div class="addGoal-header">Add Goals<div>
-        <div class="navbar">
-            <a href="index.html" style="text-decoration: underline;">Login Page</a> 
-            <a href="homePage.html" style="text-decoration: underline;">Goals Page</a>
+        <div class="navbar" id="myNavBar">
+            <div class="nav-toggler icon" onclick="toggleMenu()">&#9776;</div>
+            <div class="nav-items">
+                <a href="index.html" style="text-decoration: underline;">Login Page</a> 
+                <a href="homePage.html" style="text-decoration: underline;">Goals Page</a>
             <!-- <a href="addGoalPage.html">Add Goals</a> -->
-            <a href="friendsGoalsPage.html" style="text-decoration: underline;">Friend's Goals</a>
+                <a href="friendsGoalsPage.html" style="text-decoration: underline;">Friend's Goals</a>                
             </div>
+        </div>
+        <script src="goals.js" defer></script>
     </header>
 
     <main class="homePage-main">

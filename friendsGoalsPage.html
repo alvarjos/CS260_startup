@@ -8,14 +8,17 @@
 </head>
 
 <body class="friendsPage">
-    <header>
+    <header class="container">
         <div class="friendsPage-header">Friends Goals<div>
-        <div class="navbar">
-            <a href="index.html" style="text-decoration: underline;">Login Page</a> 
-            <a href="homePage.html" style="text-decoration: underline;">Goals Page</a>
-            <a href="addGoalPage.html" style="text-decoration: underline;">Add Goals</a>
-            
+        <div class="navbar" id="myNavBar">
+            <div class="nav-toggler icon" onclick="toggleMenu()">&#9776;</div>
+            <div class="nav-items">
+                <a href="index.html" style="text-decoration: underline;">Login Page</a> 
+                <a href="homePage.html" style="text-decoration: underline;">Goals Page</a>
+                <a href="addGoalPage.html" style="text-decoration: underline;">Add Goals</a>
+            </div>
 <!-- <a href="#">View Friends Goals</a> -->
+        <script src="goals.js" defer></script>    
     </header>
     <main class="homePage-main">
         <h4>List of Friends</h4>        
