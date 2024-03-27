@@ -141,6 +141,14 @@ input {
     background-color: black;
     margin-top: 20px;
 }
+.create-account-button {
+    padding: 5px;
+    width: 150px;
+    color: white;
+    background-color: black;
+    margin-top: 20px;
+    margin-left: 10px;
+}
 
 .creation-button {
     display: inline-block;

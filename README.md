@@ -50,3 +50,10 @@ friends are then pulled from their user information/database
 
 # CSS Deliverable
 For this deliverable I added the CSS to my application to make it look presentable. 
+
+- Header, Footer and main content in all the html pages
+- Added a navigation bar that is responsive to window shrinking 
+- Images and navigation bars are responsive to window sizes and various devices  
+- Good use of space and application elements to create a nice aesthetic to the pages 
+- Consistent fonts, text, and color schemes
+- Application Images - Have a few images at the bottom of the pages in the footer, and the main index.html page has an image for a background that is responsive. 
